@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+  data.mongodb:
+      host: localhost
+      port: 27017
+      database: reactive_demo
+
+---
+spring:
+  profiles: prod
+  data.mongodb:
+    host: localhost
+    port: 27017
+    database: reactive_demo
+
+---
+spring:
+  profiles: nonprod
+  data.mongodb:
+    host: localhost
+    port: 27017
+    database: reactive_demo
